@@ -6,6 +6,8 @@ app_email = "ahmed@alsahly.com"
 app_license = "mit"
 # required_apps = []
 
+website_path_resolver = ['url_router.cf.resolve_path']
+
 # Includes in <head>
 # ------------------
 

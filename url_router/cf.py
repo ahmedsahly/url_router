@@ -5,7 +5,9 @@ import frappe
 
 
 def resolve_path(path):
-    
+    #print('Path: ', path)
+    if not path:
+        path = frappe.db.get_single_value('Website Settings', 'home_page')
     if path and '.js' not in path:
         # get the first part of the path
         url_parts = path.rsplit('/')
